@@ -1,4 +1,5 @@
 <template>
+  <div>
   	<div id="main">
 		<div class="text-center text-gray-800 p-6">
 			<h1 class="text-5xl font-bold mt-0">Teachers</h1>
@@ -54,43 +55,22 @@
 				</div>
 			</div>	
 		</div>
+
 	</div>
+  </div>
 </template>
 
 <script>
-import Modal from '../components/Modal.vue';
 export default {
 	props: {
 		teachers: {
 	      required: true,
 	      type: Array
 	    },
-		errors: {
-			Object,
-		}
 	},
-	components: {
-		Modal
-	},
-	data() {
-		return {
-			showModal: false,
-		}
-	},
-	methods: {
-		createTeacher() {
-			this.showModal = true;
-		},
-	},
+
 	mounted() {
+		console.log('This does nothing, you should remove it :)');
 	}
 };
 </script>
-<style scoped>
-.avatar {
-	width: 75px;
-	height: 75px;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-</style>
