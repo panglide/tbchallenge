@@ -66,7 +66,7 @@ class TeacherController extends Controller
         ];
 
         $teacher = Teacher::create($teacherInfo);
-        
+        sleep(1);
         return Redirect::route('main.index');
     }
 
