@@ -3095,63 +3095,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
@@ -3184,6 +3127,8 @@ __webpack_require__.r(__webpack_exports__);
         },
         onFinish: function onFinish() {
           _this.processing = false;
+
+          _this.$emit('closeModal');
         }
       });
     }
@@ -26509,7 +26454,8 @@ var render = function() {
                           return _c("div", { key: index }, [
                             _c("label", [
                               _vm._v(
-                                _vm._s(grade) + "\n                            "
+                                _vm._s(grade) +
+                                  "\n                                "
                               ),
                               _c("input", {
                                 directives: [
@@ -26583,7 +26529,7 @@ var render = function() {
                             _c("label", [
                               _vm._v(
                                 _vm._s(subject) +
-                                  "\n                            "
+                                  "\n                                "
                               ),
                               _c("input", {
                                 directives: [
@@ -26658,12 +26604,12 @@ var render = function() {
                       "button",
                       {
                         staticClass:
-                          "px-6\n                        my-4\n                        py-2.5\n                        bg-blue-600\n                        text-white\n                        font-medium\n                        text-xs\n                        leading-tight\n                        uppercase\n                        rounded\n                        shadow-md\n                        hover:bg-blue-700 hover:shadow-lg\n                        focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0\n                        active:bg-blue-800 active:shadow-lg\n                        transition\n                        duration-150\n                        ease-in-out\n                        ml-1",
+                          "px-6\n                            my-4\n                            py-2.5\n                            bg-blue-600\n                            text-white\n                            font-medium\n                            text-xs\n                            leading-tight\n                            uppercase\n                            rounded\n                            shadow-md\n                            hover:bg-blue-700 hover:shadow-lg\n                            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0\n                            active:bg-blue-800 active:shadow-lg\n                            transition\n                            duration-150\n                            ease-in-out\n                            ml-1",
                         attrs: { type: "submit", disabled: _vm.processing }
                       },
                       [
                         _vm._v(
-                          "\n                    Save changes\n                "
+                          "\n                        Save changes\n                    "
                         )
                       ]
                     )
@@ -26682,7 +26628,7 @@ var render = function() {
                     "button",
                     {
                       staticClass:
-                        "px-6\n                    mb-6\n                    py-2.5\n                    bg-green-600\n                    text-white\n                    font-medium\n                    text-xs\n                    leading-tight\n                    uppercase\n                    rounded\n                    shadow-md\n                    hover:bg-green-700 hover:shadow-lg\n                    focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0\n                    active:bg-green-800 active:shadow-lg\n                    disabled:bg-green-200\n                    transition",
+                        "px-6\n                            mb-6\n                            py-2.5\n                            bg-green-600\n                            text-white\n                            font-medium\n                            text-xs\n                            leading-tight\n                            uppercase\n                            rounded\n                            shadow-md\n                            hover:bg-green-700 hover:shadow-lg\n                            focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0\n                            active:bg-green-800 active:shadow-lg\n                            disabled:bg-green-200\n                            transition",
                       attrs: { type: "button", "data-bs-dismiss": "modal" },
                       on: {
                         click: function($event) {
@@ -26690,7 +26636,7 @@ var render = function() {
                         }
                       }
                     },
-                    [_vm._v("\n            Close\n        ")]
+                    [_vm._v("\n                    Close\n                ")]
                   )
                 ]
               )

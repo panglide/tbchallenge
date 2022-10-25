@@ -14,7 +14,7 @@
 			</button>
 		</div>
 
-		<!-- Modal -->
+		<!-- Add Teacher Modal -->
 		<modal
 			v-if="showModal"
 			:errors="errors"
