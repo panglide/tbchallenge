@@ -5,17 +5,17 @@ body {
 #main {
 	margin: 0 auto;
 	margin-top: 20px;
-	width: 95%;
+	width: 60%;
 }
 
-/* button {
+button {
 	float: right;
 	margin-bottom: 5px;
 	background-color: green;
 	color: #ffffff;
-} */
+}
 
-/* table {	
+table {	
 	background-color: #ffffff;
 	border: 1px solid #dddddd;	
 	width: 100%;
@@ -28,8 +28,4 @@ table th {
 
 table td {
 	padding: 4px;
-} */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+}

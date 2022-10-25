@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
-use App\Http\Controllers\TeacherController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +14,5 @@ use App\Http\Controllers\TeacherController;
 |
 */
 
-
+// There may be a bug here :)
 Route::get('/', [MainController::class, 'index'])->name('main.index');
-
-Route::post('/teacher', [TeacherController::class, 'store']);
