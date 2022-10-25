@@ -21,7 +21,7 @@
 			@closeModal="showModal = false"
 		>
 		</modal>
-		<!-- end Modal -->
+		<!-- end Teacher Modal -->
 
 		<div class="flex flex-col">
 			<div class="overflow-x-auto">
