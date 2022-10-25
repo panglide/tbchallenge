@@ -3263,37 +3263,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
@@ -26388,11 +26357,11 @@ var render = function() {
     "div",
     {
       staticClass:
-        "modal fade fixed top-5 left-0 w-full h-full outline-none overflow-x-hidden overflow-y-auto",
+        "modal fade fixed sm:inset-1 md:inset-40 sm:w-full md:w-4/5  sm:h-full outline-none overflow-x-hidden overflow-y-auto",
       attrs: {
-        id: "exampleModal",
+        id: "createTeacherModal",
         tabindex: "-1",
-        "aria-labelledby": "exampleModalLabel",
+        "aria-labelledby": "createTeacherModel",
         "aria-hidden": "true"
       }
     },
@@ -26405,7 +26374,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current"
+                "modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-gray-300 bg-clip-padding rounded-md outline-none text-current"
             },
             [
               _vm._m(0),
@@ -26439,7 +26408,11 @@ var render = function() {
                               expression: "form.first_name"
                             }
                           ],
-                          attrs: { type: "text", placeholder: "First Name" },
+                          attrs: {
+                            type: "text",
+                            placeholder: "First Name",
+                            required: ""
+                          },
                           domProps: { value: _vm.form.first_name },
                           on: {
                             input: function($event) {
@@ -26468,7 +26441,11 @@ var render = function() {
                               expression: "form.last_name"
                             }
                           ],
-                          attrs: { type: "text", placeholder: "Last Name" },
+                          attrs: {
+                            type: "text",
+                            placeholder: "Last Name",
+                            required: ""
+                          },
                           domProps: { value: _vm.form.last_name },
                           on: {
                             input: function($event) {
@@ -26497,7 +26474,11 @@ var render = function() {
                               expression: "form.school"
                             }
                           ],
-                          attrs: { type: "text", placeholder: "School Name" },
+                          attrs: {
+                            type: "text",
+                            placeholder: "School Name",
+                            required: ""
+                          },
                           domProps: { value: _vm.form.school },
                           on: {
                             input: function($event) {
@@ -26701,15 +26682,15 @@ var render = function() {
                     "button",
                     {
                       staticClass:
-                        "px-6\n                    mb-6\n                    py-2.5\n                    bg-purple-600\n                    text-white\n                    font-medium\n                    text-xs\n                    leading-tight\n                    uppercase\n                    rounded\n                    shadow-md\n                    hover:bg-purple-700 hover:shadow-lg\n                    focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0\n                    active:bg-purple-800 active:shadow-lg\n                    transition\n                    duration-150\n                    ease-in-out",
+                        "px-6\n                    mb-6\n                    py-2.5\n                    bg-green-600\n                    text-white\n                    font-medium\n                    text-xs\n                    leading-tight\n                    uppercase\n                    rounded\n                    shadow-md\n                    hover:bg-green-700 hover:shadow-lg\n                    focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0\n                    active:bg-green-800 active:shadow-lg\n                    disabled:bg-green-200\n                    transition",
                       attrs: { type: "button", "data-bs-dismiss": "modal" },
                       on: {
                         click: function($event) {
-                          return _vm.$emit("close")
+                          return _vm.$emit("closeModal")
                         }
                       }
                     },
-                    [_vm._v("Close")]
+                    [_vm._v("\n            Close\n        ")]
                   )
                 ]
               )
@@ -26803,7 +26784,7 @@ var render = function() {
         ? _c("modal", {
             attrs: { errors: _vm.errors },
             on: {
-              close: function($event) {
+              closeModal: function($event) {
                 _vm.showModal = false
               }
             }
@@ -26889,9 +26870,7 @@ var render = function() {
             )
           ])
         ])
-      ]),
-      _vm._v(" "),
-      _vm._m(2)
+      ])
     ],
     1
   )
@@ -26972,123 +26951,6 @@ var staticRenderFns = [
         )
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto",
-        attrs: {
-          id: "exampleModalCenteredScrollable",
-          tabindex: "-1",
-          "aria-labelledby": "exampleModalCenteredScrollable",
-          "aria-modal": "true",
-          role: "dialog"
-        }
-      },
-      [
-        _c(
-          "div",
-          {
-            staticClass:
-              "modal-dialog modal-dialog-centered modal-dialog-scrollable relative w-auto pointer-events-none"
-          },
-          [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current"
-              },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md"
-                  },
-                  [
-                    _c(
-                      "h5",
-                      {
-                        staticClass:
-                          "text-xl font-medium leading-normal text-gray-800",
-                        attrs: { id: "exampleModalCenteredScrollableLabel" }
-                      },
-                      [_vm._v("\n          Modal title\n        ")]
-                    ),
-                    _vm._v(" "),
-                    _c("button", {
-                      staticClass:
-                        "btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline",
-                      attrs: {
-                        type: "button",
-                        "data-bs-dismiss": "modal",
-                        "aria-label": "Close"
-                      }
-                    })
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-body relative p-4" }, [
-                  _c("p", [
-                    _vm._v(
-                      "This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal."
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _c("br"),
-                  _c("br"),
-                  _c("br"),
-                  _c("br"),
-                  _c("br"),
-                  _c("br"),
-                  _c("br"),
-                  _c("br"),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("p", [_vm._v("Just like that.")])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md"
-                  },
-                  [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out",
-                        attrs: { type: "button", "data-bs-dismiss": "modal" }
-                      },
-                      [_vm._v("\n          Close\n        ")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ml-1",
-                        attrs: { type: "button" }
-                      },
-                      [_vm._v("\n          Save changes\n        ")]
-                    )
-                  ]
-                )
-              ]
-            )
-          ]
-        )
-      ]
-    )
   }
 ]
 render._withStripped = true
